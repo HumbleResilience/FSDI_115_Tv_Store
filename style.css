@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -5,39 +6,36 @@
 }
 body{
     background-color: lightgray;
+    font-family: 'Times New Roman';
 }
 
-
-.col1{
-    display:flex;
-    position:relative;
-    justify-content: space-evenly;
-    
-}
-.col2{
-    
-}
-.container{
-    display:flex;
+img{
+    max-width: 50%;
 }
 
+a{
+    text-decoration: none;
+}
 
-ul{
-    list-style-type: none;
+/*menu*/
+.navbar{
+
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    position: fixed;
 }
 
 .logo{
-    max-width: 5%;
+    height: 40px;
 }
 
 .logo-text{
     white-space: nowrap;
     padding: 1rem;
     font-family: 'Times New Roman';
-    color: rgb(255, 255, 255);
-}
-.navbar{
-    height:70px
+    font-size: 1.5rem;
+    color: rgb(226, 238, 66);
 }
 
 .nav-item {
@@ -45,81 +43,110 @@ ul{
     margin-left: 10rem;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
 
 .d-flex {
-    margin-left: 5rem;
+    margin-left: 22rem;
+    display: none;
 }
 
 .btn {
     margin-left: .4rem;
 }
+/*end of menu*/
 
-h1 {
+/* Openning Statement*/
+header{
+    height: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header h1{
     font-family: 'Times New Roman';
     color: black;
     text-align: center;
 }
+header p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+header p span{
+    border-bottom: 2px solid rgb(57, 176, 255);
+    line-height: 2;
+    color: black;
+}
+
+.border {
+    border-bottom: 3px solid rgb(55, 74, 241);
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*end of statement*/
+
+/*Big TV Box*/
+@media(min-width:5rem){
+.container-big {
+    display:flex;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.big-tv{
+    background-color:rgb(179, 179, 192);
+    display:flex;
+    margin-top:20%;
+    max-width:25rem;
+    padding:2rem;
+}
+
+.col2 {
+    margin-left: 10rem;
+    margin-right: 5rem;
+    }
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.product{
+    display:flex;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+}
+
+/* End of Big TV*/
 h2 {
     font-family: 'Times New Roman';
     font-size: 1.5rem;
     padding-left: .5rem;
 }
-
-h3 {
+/* Popular Item Flex Box */
+@media(min-width:5rem) {
+.popular {
     font-family: 'Times New Roman';
-    white-space: nowrap;
+    margin-left: 25rem;
 }
-
-h4 {
-    font-family: 'Times New Roman';
-    white-space: nowrap;
-}
-p {
-    white-space: nowrap;
-}
-.nav-footer {
-    font-family: 'Times New Roman';
-    font-size: 1.2rem;
-    font-weight: .3rem;
-    margin-top: .4rem;
-}
-.footer1 {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0rem;
-    width: 100%;
-    height: 40px;
-}
-
-.navbar-text {
-    font-family: 'Times New Roman';
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-bottom: .3rem;
-    color: white;
-}
-
-.social {
-    margin-top: .4rem;
-}
-.big-tv-image{
-    background-color:darkgrey;
-    display:flex;
-    padding:1%;
-    margin-top:20%;
-    width:100%;
-    
-   
-}
-#big-tv{
-    max-width:25rem;
-    padding:10%;
-    
-    
-}
-
-
 
 .popular-items-ul{
     display:flex;
@@ -156,11 +183,13 @@ p {
     text-align:center;
 
 }
+}
+/* End of Popular*/
 
+/* Deals*/
 .deal-of-day{
     width:50%;
     position:relative;
-    
 }
 
 .deals{
@@ -168,14 +197,48 @@ p {
     max-width:90%;
     text-align:center;
     margin-left:50px;
-    
-    
-
 }
 
 .item-description{
     background-color:darkgray;
-    
+}
+/* End of Deals */
+
+
+h4 {
+    font-family: 'Times New Roman';
+    white-space: nowrap;
+}
+
+p {
+    white-space: nowrap;
+}
+
+/*Bottom Nav Footer*/
+.nav-footer {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    font-weight: .3rem;
+    margin-top: .4rem;
+}
+.footer1 {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0rem;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar-text {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: .3rem;
+    color: white;
+}
+
+.social {
+    margin-top: .4rem;
 }
 
 .footer{
