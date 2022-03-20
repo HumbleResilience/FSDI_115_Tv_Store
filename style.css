@@ -108,12 +108,14 @@ p {
     display:flex;
     padding:1%;
     margin-top:20%;
-    width:100%
+    width:100%;
+    
    
 }
 #big-tv{
     max-width:25rem;
     padding:10%;
+    
     
 }
 
@@ -210,3 +212,51 @@ p {
 }
 
 
+/* 
+------about me----------- */
+
+.image-container-div{
+    display:flex;
+}
+
+.about-image-1{
+    width:50%;
+    height:auto;
+    margin-left:100%;
+    margin-top: 50%;
+    padding:5px;
+}
+
+.about-image-2{
+    width:50%;
+    height:auto;
+    margin-left:300%;
+    margin-top:50%
+}
+
+.aboutme-col1{
+    width:50%;
+    text-align:center;
+    background-color:darkgray;
+    padding:10px;
+    margin-right:50px;
+    white-space: normal;
+   
+    
+}
+.aboutme-col2{
+    width:50%;
+    text-align:center;
+    background-color:darkgray;
+    padding:10px;
+    margin-right:50px;
+   
+    }
+
+.aboutme-p-wrapper{
+    display:flex;
+
+}
+p{
+    white-space:normal;
+}
