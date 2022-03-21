@@ -112,26 +112,32 @@ h1{
 
 
 
+
 /*end of statement*/
 
 /*Big TV Box*/
 
-.container-big {
+.flex-container{
     display:flex;
-    margin: 5px;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+
+}
+.flex-child{
+    flex:1;
+    
+    text-align:center;
+    padding:0;
+    margin:0;
 }
 
+
+
+
 .big-tv{
-    background-color:rgb(179, 179, 192);
-    display:flex;
     margin-top:20%;
-    max-width:50%;
-    padding:2rem;
+    max-width:30%;
+   text-align:center;
+   padding-bottom:10px;
+   
 }
 
 .col2 {
@@ -167,24 +173,7 @@ h2 {
 }
 /* Popular Item Flex Box */
 
-.popular {
-    font-family: 'Times New Roman';
-    margin-left: 25rem;
-}
 
-.popular-items-ul{
-    display:flex;
-    margin-left: 3rem;
-    background-color:rgb(179, 179, 192);
-    padding:5%;
-    justify-content: space-evenly;
-    flex-direction:row;
-
-}
-
-.popular-items{
-    margin-top:15%;
-}
 
 #tv1{
     width: 15rem;
@@ -199,7 +188,7 @@ h2 {
     
 }
 #tv3{
-    width:15rem;
+    width:20rem;
     height:auto;
     padding:10%;
 }
@@ -217,15 +206,13 @@ h2 {
 }
 
 .deals{
-    background-color:rgb(179, 179, 192);
+    
     max-width:90%;
     text-align:center;
     margin-left:30px;
 }
 
-.item-description{
-    background-color:rgb(179, 179, 192);
-}
+
 /* End of Deals */
 
 
@@ -328,17 +315,12 @@ p {
     padding:10px;
     margin-right:50px;
     white-space: normal;
-   
+    margin-left:50px;
+
     
 }
-.aboutme-col2{
-    width:50%;
-    text-align:center;
-    background-color:darkgray;
-    padding:10px;
-    margin-right:50px;
-   
-    }
+
+
 
 .aboutme-p-wrapper{
     display:flex;
@@ -357,7 +339,7 @@ p{
     }
 
     h1{
-        padding:30px;
+        padding:20px;
         width:50%;
         margin-left:14rem;
     }
