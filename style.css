@@ -1,4 +1,12 @@
 
+
+
+
+
+.topnav{
+    display:none;
+}
+
 *{
     margin:0;
     padding:0;
@@ -89,10 +97,25 @@ header p span{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ------------------end navbar---------------------------------- */
+
+
+
+
+h1{
+    text-align:center;
+}
+.firstp{
+    text-align:center;
+}
+
+
+
 /*end of statement*/
 
 /*Big TV Box*/
-@media(min-width:5rem){
+
 .container-big {
     display:flex;
     margin: 5px;
@@ -107,7 +130,7 @@ header p span{
     background-color:rgb(179, 179, 192);
     display:flex;
     margin-top:20%;
-    max-width:25rem;
+    max-width:50%;
     padding:2rem;
 }
 
@@ -133,7 +156,8 @@ header p span{
     font: inherit;
     vertical-align: baseline;
     }
-}
+
+    
 
 /* End of Big TV*/
 h2 {
@@ -142,7 +166,7 @@ h2 {
     padding-left: .5rem;
 }
 /* Popular Item Flex Box */
-@media(min-width:5rem) {
+
 .popular {
     font-family: 'Times New Roman';
     margin-left: 25rem;
@@ -151,7 +175,7 @@ h2 {
 .popular-items-ul{
     display:flex;
     margin-left: 3rem;
-    background-color:darkgray;
+    background-color:rgb(179, 179, 192);
     padding:5%;
     justify-content: space-evenly;
     flex-direction:row;
@@ -183,7 +207,7 @@ h2 {
     text-align:center;
 
 }
-}
+
 /* End of Popular*/
 
 /* Deals*/
@@ -193,14 +217,14 @@ h2 {
 }
 
 .deals{
-    background-color:darkgray;
+    background-color:rgb(179, 179, 192);
     max-width:90%;
     text-align:center;
-    margin-left:50px;
+    margin-left:30px;
 }
 
 .item-description{
-    background-color:darkgray;
+    background-color:rgb(179, 179, 192);
 }
 /* End of Deals */
 
@@ -323,3 +347,71 @@ p {
 p{
     white-space:normal;
 }
+/* ------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1140px){
+    .navbar{
+       display:none;
+    }
+
+    h1{
+        padding:30px;
+        width:50%;
+        margin-left:14rem;
+    }
+    
+.container-big{
+    margin-left:13rem;
+}
+
+.popular{
+    margin-left:5rem;
+}
+.col2{
+    margin-right:13rem;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display:block;
+  width:100%
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: none;
+  width: 100%;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width:844px) {
+    .container-big{
+    
+    }
+}
+    
+}
+
+
